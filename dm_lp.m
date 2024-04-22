@@ -65,11 +65,26 @@
 % disp(n);
 
 % n = 0;
-for i = 1:10
-    if i == 5
-        break
-    else
-        disp(i);
-    end
-end 
-disp(n);
+% for i = 1:10
+%     if i == 5
+%         break
+%     else
+%         disp(i);
+%     end
+% end 
+% disp(n);
+
+
+%22 april 2024 
+% %while
+% n = 0;
+% while n < 10 
+%     disp('mengulang');
+% end
+
+%kondisi baru 
+% n = 0;
+% while n < 10 
+%     disp('mengulang');
+%     n = n+1;
+% end
