@@ -195,7 +195,71 @@
 % surfc(x,y,z)
 % grid on
 
-[x,y] = meshgrid(-3:0.3:3);
-z = x.*exp(-x.^2-y.^2);
-mesh(x,y,z)
+% [x,y] = meshgrid(-3:0.3:3);
+% z = x.*exp(-x.^2-y.^2);
+% mesh(x,y,z)
+% grid on
+
+% KAMIS 25-4-24
+% 
+% contoh fungsi f1 = equal maxima
+% x = [0:0.001:1];
+% y = (sin(5*pi*x)).^6; 
+% plot(x,y)
+% xlabel('sumbu X')
+% ylabel('f(X)')
+% title('Contoh Grafik Fungsi f1')
+% 
+% contoh fungsi f2 = decreasing maxima
+% x = [0:0.001:1];
+% y = exp(-2*log(2).*((x-0.1)/0.8).^2).*(sin(5*pi*x)).^6;
+% plot(x,y)
+% xlabel('sumbu X')
+% ylabel('f(X)')
+% title('Contoh Grafik Fungsi f2')
+% 
+% contoh fungsi f3 = himmelblau
+% x = -10:0.2:10;
+% y = -10:0.2:10;
+% [X, Y] = meshgrid(x, y);
+% Z = (X.^2 + Y - 11).^2 + (X + Y.^2 - 7).^2;
+% mesh(X, Y, Z);
+% xlabel('sumbu X')
+% ylabel('sumbu Y')
+% title('Contoh Grafik Fungsi f3')
+% 
+% contoh fungsi f4 = second minima
+% x = -4:0.2:4;
+% y = -4:0.2:4;
+% [X, Y] = meshgrid(x, y);
+% Z = 1/2*(X.^4 - 16*X.^2 + 5*X) + 1/2*(Y.^4 - 16*Y.^2 + 5*Y);
+% surfc(X, Y, Z);
+% xlabel('sumbu X')
+% ylabel('sumbu Y')
+% zlabel('sumbu Z')
+% title('Contoh Grafik Fungsi f4')
+% colorbar
+% 
+% contoh fungsi f5 = six hum camel back
+% x = [-1.9:0.1:1.9];
+% y = [-1.1:0.1:1.1];
+% [X, Y] = meshgrid(x, y);
+% Z = (4 - 2.1*X.^2 + (X.^4/3)).*X.^2 + X.*Y + 4*(-1 + Y.^2).*Y.^2;
+% meshc(X, Y, Z);
+% xlabel('Sumbu x')
+% ylabel('z(x)')
+% title('Contoh Grafik Fungsi f5')
+% legend('z(x)','y(x)')
+% grid on
+
+% contoh fungsi f7 = bird
+x = [-10:0.1:10];
+y = [-10:0.1:10];
+[X, Y] = meshgrid(x, y);
+Z = sin(X).*exp((1-cos(Y)).^2) + cos(Y).*exp((1-cos(Y)).^2)+(X-Y).^2;
+meshc(X, Y, Z);
+xlabel('Sumbu x')
+ylabel('z(x)')
+title('Contoh Grafik Fungsi f5')
+legend('z(x)','y(x)')
 grid on
