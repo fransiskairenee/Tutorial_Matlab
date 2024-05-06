@@ -5,5 +5,6 @@ tol = 1e-6;
 maxiter = 100;
 
 % Metode Jacobi
-[iter,x] = jacobi(A,b,maxiter,x0,tol)
-disp(x)
+[x, iter] = jacobi(A,b,x0,tol, max_iter);
+disp('solusi');
+disp(x);
